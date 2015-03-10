@@ -44,6 +44,7 @@ void MyDelegate::paint(QPainter * painter, const QStyleOptionViewItem & option, 
     {
         paintItemNoComments(painter, option, item);
     }
+    painter->drawLine(option.rect.bottomLeft(), option.rect.bottomRight());
 }
 
 QSize	MyDelegate::sizeHint(const QStyleOptionViewItem & option, const QModelIndex & index) const

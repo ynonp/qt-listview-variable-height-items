@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    _model = new MyModel();
+    _model = new MyModel(this);
     _delegate = new MyDelegate(this);
 
     ui->listView->setModel(_model);

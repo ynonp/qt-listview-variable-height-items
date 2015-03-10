@@ -1,6 +1,7 @@
 #include "mymodel.h"
 
-MyModel::MyModel()
+MyModel::MyModel(QObject *parent):
+    QAbstractListModel(parent)
 {
     // creating a default list of items
     _items << ListItem("Apples", 10, "");

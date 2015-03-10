@@ -8,7 +8,7 @@
 class MyModel : public QAbstractListModel
 {
 public:
-    MyModel();
+    MyModel(QObject *parent);
     ~MyModel();
     int rowCount(const QModelIndex & parent = QModelIndex()) const;
     QVariant data(const QModelIndex & index, int role = Qt::DisplayRole) const;
